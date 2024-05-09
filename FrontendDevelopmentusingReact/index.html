@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BASIC TODO</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      header {
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+      }
+      header h2 {
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+      }
+      main {
+        width: 90vw;
+        margin: auto;
+        height: 80vh;
+      }
+      main h2 {
+        padding-top: 10px;
+        font-size: 50px;
+        text-transform: capitalize;
+        font-family: sans-serif;
+      }
+      .content ul {
+        list-style-type: lower-roman;
+        font-size: 2em;
+        padding-left: 50px;
+        margin-top: 10px;
+      }
+      .content ul li {
+        border-top: 1px #000 solid;
+      }
+
+      .form-control {
+        display: flex;
+        margin-top: 10px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .form-control input[type="text"] {
+        outline: none;
+        margin-right: 2px;
+        border: 1px salmon solid;
+        padding: 10px;
+        font-size: 1.5em;
+        width: 30%;
+        text-transform: capitalize;
+      }
+      .form-control button {
+        border: 1px salmon solid;
+        width: 100px;
+        background-color: antiquewhite;
+      }
+      .form-control button:hover {
+        border: 5px salmon dotted;
+        cursor: pointer;
+      }
+      footer {
+        background-color: aquamarine;
+        height: 50px;
+      }
+      footer h4 {
+        padding-left: 15px;
+        padding-top: 15px;
+        font-style: oblique;
+      }
+    </style>
+  
+  </head>
+  <body>
+    <header>
+      <h2>Basic Todo Site</h2>
+    </header>
+    <main>
+      <h2>Welcome to my Todo</h2>
+      <div class="content">
+        <div class="form-control">
+          <input type="text" id="txt" placeholder="enter the todo"/>
+          <button id="AddTodo">Add Todo</button>
+        </div>
+        <ul class="todo-item">
+          <li>Coursera Assignment</li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <h4>Assignment of frontend development using ReactJS</h4>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
